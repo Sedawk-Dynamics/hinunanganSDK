@@ -18,8 +18,8 @@ export default function CapabilitiesPage() {
         eyebrow="Capabilities"
         title="Specialist capabilities, delivered end to end"
         description="Multidisciplinary teams carrying projects from design and permitting through to maintenance."
-        image="/images/about-hero.jpg"
-        imageAlt="Multidisciplinary engineering team reviewing blueprints on site at dusk"
+        image="/images/capabilities-hero.jpg"
+        imageAlt="Line engineer in safety gear working on overhead power cables from an elevated platform"
       />
 
       <section className="mx-auto max-w-7xl px-6 py-10 md:py-14 lg:px-8">

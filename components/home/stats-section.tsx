@@ -36,7 +36,7 @@ const stats = [
   {
     icon: Sun,
     value: '341 kW',
-    label: 'Solar PV Installed — MEGACHEM',
+    label: 'Solar PV Installed',
     from: 'oklch(0.45 0.14 255)',
     to: 'oklch(0.66 0.13 235)',
   },

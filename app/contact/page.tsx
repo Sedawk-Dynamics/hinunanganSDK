@@ -27,8 +27,8 @@ export default function ContactPage() {
         eyebrow="Contact"
         title="Let's talk about your project"
         description="Fibre rollout, airfield upgrade, or data centre build — our team replies within one business day."
-        image="/images/global-map.jpg"
-        imageAlt="Abstract glowing map showing regional connections across Southeast Asia"
+        image="/images/contact-hero.jpg"
+        imageAlt="Singapore skyline at blue hour across Marina Bay"
       />
 
       <section className="mx-auto max-w-7xl px-6 py-10 md:py-14 lg:px-8">

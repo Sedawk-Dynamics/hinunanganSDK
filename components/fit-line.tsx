@@ -63,8 +63,10 @@ export function FitLine({
     }
   }, [minSize])
 
+  // inline-size containment stops the unwrapped text from widening grid/flex columns,
+  // so we measure (and shrink to) the space the layout actually gives us
   return (
-    <Tag ref={ref as React.Ref<never>} className={className}>
+    <Tag ref={ref as React.Ref<never>} className={className} style={{ contain: 'inline-size' }}>
       {children}
     </Tag>
   )

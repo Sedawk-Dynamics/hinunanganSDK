@@ -21,7 +21,7 @@ export default function ProjectsPage() {
   title="Critical infrastructure, delivered on schedule"
   description="Projects our teams have designed, built, and commissioned across the region."
         image="/images/projects-hero.jpg"
-        imageAlt="Airport runway with airfield guidance signage lit at blue hour"
+        imageAlt="Night-time airport runway resurfacing works with crews and heavy machinery"
       />
 
       <section className="mx-auto max-w-7xl px-6 py-10 md:py-14 lg:px-8">

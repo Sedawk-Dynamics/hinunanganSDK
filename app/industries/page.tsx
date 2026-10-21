@@ -19,8 +19,8 @@ export default function IndustriesPage() {
         eyebrow="Industries"
   title="Trusted by sectors that keep economies moving"
   description="From airports to shipyards, we work where infrastructure failure is not an option."
-        image="/images/projects-hero.jpg"
-        imageAlt="Airport runway with airfield guidance signage lit at blue hour"
+        image="/images/industries-hero.jpg"
+        imageAlt="Telecommunication towers silhouetted against a sunset sky"
       />
 
       <section className="mx-auto max-w-7xl px-6 py-10 md:py-14 lg:px-8">

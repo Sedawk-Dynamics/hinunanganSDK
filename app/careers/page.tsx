@@ -42,7 +42,7 @@ export default function CareersPage() {
         title="Build the infrastructure others rely on"
         description="Join engineers and technicians building the systems that keep airports and networks running."
         image="/images/careers-hero.jpg"
-        imageAlt="Engineer in safety gear standing on an infrastructure site at dusk"
+        imageAlt="Engineers in hard hats working on a construction site"
       />
 
       <section className="mx-auto max-w-7xl px-6 py-10 md:py-14 lg:px-8">

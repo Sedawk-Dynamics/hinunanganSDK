@@ -26,9 +26,9 @@ export default function AboutPage() {
       />
 
       <section className="py-10 md:py-14">
-        <div className="mx-auto max-w-3xl px-6 md:px-10">
+        <div className="mx-auto max-w-7xl px-6 md:px-10">
           <Reveal>
-            <p className="text-pretty text-center text-lg leading-relaxed text-muted-foreground md:text-xl">
+            <p className="max-w-4xl text-pretty text-left text-lg leading-relaxed text-muted-foreground md:text-xl">
               Our capabilities span telecommunications, aviation, rail, marine, electrical
               systems, digital infrastructure, intelligent systems, renewable energy and
               advanced data intelligence. We combine engineering expertise, technical
