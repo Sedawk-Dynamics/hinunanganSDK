@@ -40,12 +40,12 @@ export default function CareersPage() {
       <PageHero
         eyebrow="Careers"
         title="Build the infrastructure others rely on"
-        description="We hire engineers, technicians, and project leaders who want to work on the systems that keep airports, networks, and cities running."
+        description="Join engineers and technicians building the systems that keep airports and networks running."
         image="/images/careers-hero.jpg"
         imageAlt="Engineer in safety gear standing on an infrastructure site at dusk"
       />
 
-      <section className="mx-auto max-w-7xl px-6 py-20 md:py-28 lg:px-8">
+      <section className="mx-auto max-w-7xl px-6 py-10 md:py-14 lg:px-8">
         <SectionHeading
           eyebrow="Why join us"
           title="A career built on real, critical engineering work"
@@ -73,7 +73,7 @@ export default function CareersPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-6 py-4 pb-24 text-center lg:px-8">
+      <section className="mx-auto max-w-3xl px-6 py-2 pb-12 text-center lg:px-8">
         <Reveal>
           <p className="text-base leading-relaxed text-muted-foreground">
             We do not currently have open roles listed, but we are always looking to hear from

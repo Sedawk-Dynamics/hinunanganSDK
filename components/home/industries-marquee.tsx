@@ -15,7 +15,7 @@ export function IndustriesMarquee() {
   const track = [...environments, ...environments]
 
   return (
-    <section className="group border-y border-border bg-card/40 py-10">
+    <section className="group border-y border-border bg-card/40 py-6">
       <p className="mx-auto mb-6 max-w-7xl px-6 text-center text-xs font-semibold uppercase tracking-[0.22em] text-primary md:px-10">
         Engineered Across Critical Environments
       </p>

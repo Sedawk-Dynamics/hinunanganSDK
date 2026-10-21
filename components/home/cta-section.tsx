@@ -23,7 +23,7 @@ export function CtaSection({
   secondaryHref = '/capabilities',
 }: CtaSectionProps) {
   return (
-    <section className="relative overflow-hidden py-24 md:py-32">
+    <section className="relative overflow-hidden py-12 md:py-16">
       <div className="glow-drift absolute inset-0 bg-gradient-brand opacity-[0.08]" />
       <div className="relative mx-auto max-w-4xl px-6 text-center md:px-10">
         <Reveal>

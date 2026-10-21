@@ -7,15 +7,15 @@ import { cn } from '@/lib/utils'
 
 const slides = [
   {
-    src: '/images/banner-hero.jpg',
+    src: '/images/hero-telecom.png',
     alt: 'Dynamic Communication — telecommunications tower overlooking a connected city skyline at dusk, representing connectivity and digital infrastructure engineering.',
   },
   {
-    src: '/images/banner-digital-energy.jpg',
+    src: '/images/hero-aviation.png',
     alt: 'Dynamic Communication — aircraft on an airport runway at sunset, representing airfield and aviation systems engineering.',
   },
   {
-    src: '/images/banner-security-project.jpg',
+    src: '/images/hero-terminal.png',
     alt: 'Dynamic Communication — modern airport terminal with baggage handling system, representing terminal, BHS and critical infrastructure engineering.',
   },
 ]
@@ -41,7 +41,7 @@ export function HeroSection() {
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-surface pt-20 md:pt-24"
+      className="relative w-full overflow-hidden bg-surface pt-16 md:pt-[4.5rem]"
       aria-roledescription="carousel"
       aria-label="Dynamic Communication banners"
     >

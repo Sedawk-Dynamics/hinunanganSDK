@@ -18,13 +18,13 @@ export default function SolutionsPage() {
     <>
       <PageHero
         eyebrow="Solutions"
-        title="Engineering solutions that keep critical systems running"
-        description="From fibre in the ground to power at the substation, our seven solution pillars cover the full lifecycle of critical infrastructure delivery."
-        image="/images/hero-infrastructure.jpg"
+  title="Solutions that keep critical systems running"
+  description="From fibre in the ground to power at the substation, across the full infrastructure lifecycle."
+        image="/images/hero-infrastructure.png"
         imageAlt="Night-time critical infrastructure engineering scene with glowing lights"
       />
 
-      <section className="mx-auto max-w-7xl px-6 py-20 md:py-28 lg:px-8">
+      <section className="mx-auto max-w-7xl px-6 py-10 md:py-14 lg:px-8">
         <SectionHeading
           eyebrow="What we deliver"
           title="Seven pillars, one integrated delivery model"

@@ -20,12 +20,12 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About Us"
         title="Engineering technology. Built for the real world."
-        description="Dynamic Communication Pte. Ltd. is a Singapore-based multidisciplinary engineering and technology infrastructure company."
+        description="Dynamic Communication Pte. Ltd. is a Singapore-based engineering and technology company."
         image="/images/about-hero.png"
         imageAlt="Engineering team reviewing infrastructure plans on site at dusk"
       />
 
-      <section className="py-20 md:py-24">
+      <section className="py-10 md:py-14">
         <div className="mx-auto max-w-3xl px-6 md:px-10">
           <Reveal>
             <p className="text-pretty text-center text-lg leading-relaxed text-muted-foreground md:text-xl">

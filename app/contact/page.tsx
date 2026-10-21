@@ -26,12 +26,12 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Let's talk about your project"
-        description="Whether it's a fibre rollout, an airfield upgrade, or a data centre build — tell us what you need and our team will respond within one business day."
+        description="Fibre rollout, airfield upgrade, or data centre build — our team replies within one business day."
         image="/images/global-map.jpg"
         imageAlt="Abstract glowing map showing regional connections across Southeast Asia"
       />
 
-      <section className="mx-auto max-w-7xl px-6 py-20 md:py-28 lg:px-8">
+      <section className="mx-auto max-w-7xl px-6 py-10 md:py-14 lg:px-8">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-5 lg:gap-16">
           <div className="lg:col-span-2">
             <Reveal>

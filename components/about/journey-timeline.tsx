@@ -35,7 +35,7 @@ const milestones = [
 
 export function JourneyTimeline() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-12 md:py-16">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <SectionHeading
           eyebrow="Our Journey"

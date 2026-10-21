@@ -17,13 +17,13 @@ export default function IndustriesPage() {
     <>
       <PageHero
         eyebrow="Industries"
-        title="Trusted across the sectors that keep economies moving"
-        description="From airports to shipyards, our teams work inside the industries where infrastructure failure is not an option."
+  title="Trusted by sectors that keep economies moving"
+  description="From airports to shipyards, we work where infrastructure failure is not an option."
         image="/images/projects-hero.jpg"
         imageAlt="Airport runway with airfield guidance signage lit at blue hour"
       />
 
-      <section className="mx-auto max-w-7xl px-6 py-20 md:py-28 lg:px-8">
+      <section className="mx-auto max-w-7xl px-6 py-10 md:py-14 lg:px-8">
         <SectionHeading
           eyebrow="Where we work"
           title="Seven industries, one standard of reliability"
