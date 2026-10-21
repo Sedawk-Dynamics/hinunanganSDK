@@ -54,16 +54,20 @@ export function SiteFooter() {
                   {col.title}
                 </Link>
                 <ul className="flex flex-col gap-2.5">
-                  {col.links.map((item) => (
-                    <li key={item}>
-                      <Link
-                        href={col.href}
-                        className="text-sm leading-relaxed text-surface-muted transition-colors hover:translate-x-0.5 hover:text-surface-foreground"
-                      >
-                        {item}
-                      </Link>
-                    </li>
-                  ))}
+                  {col.links.map((item) => {
+                    const label = typeof item === 'string' ? item : item.label
+                    const href = typeof item === 'string' ? col.href : item.href
+                    return (
+                      <li key={label}>
+                        <Link
+                          href={href}
+                          className="text-sm leading-relaxed text-surface-muted transition-colors hover:translate-x-0.5 hover:text-surface-foreground"
+                        >
+                          {label}
+                        </Link>
+                      </li>
+                    )
+                  })}
                 </ul>
               </RevealItem>
             ))}

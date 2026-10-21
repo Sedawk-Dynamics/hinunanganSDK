@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import { Mail, Phone, MapPin } from 'lucide-react'
+import Link from 'next/link'
+import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react'
 import { PageHero } from '@/components/page-hero'
 import { Reveal } from '@/components/motion/reveal'
 import { ContactForm } from '@/components/contact/contact-form'
@@ -57,6 +58,13 @@ export default function ContactPage() {
                   <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
                   +65 9748 1689 / 9743 1000
                 </a>
+                <Link
+                  href="/partner"
+                  className="group mt-2 inline-flex items-center gap-2 text-sm font-semibold text-primary"
+                >
+                  Interested in partnering with us? Partner With Us
+                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+                </Link>
               </div>
             </Reveal>
 

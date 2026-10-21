@@ -6,10 +6,13 @@ export const navLinks = [
   { label: 'Industries', href: '/industries' },
   { label: 'Projects', href: '/projects' },
   { label: 'Careers', href: '/careers' },
+  { label: 'Partner With Us', href: '/partner' },
   { label: 'Contact', href: '/contact' },
 ]
 
-export const footerColumns = [
+type FooterLink = string | { label: string; href: string }
+
+export const footerColumns: { title: string; links: FooterLink[]; href: string }[] = [
   {
     title: 'Businesses',
     links: [
@@ -55,9 +58,11 @@ export const footerColumns = [
       'Our Journey',
       'Our Team',
       'Our Global Footprint',
-      'Projects',
+      { label: 'Projects', href: '/projects' },
       'Quality & Safety',
-      'Careers',
+      { label: 'Careers', href: '/careers' },
+      { label: 'Partner With Us', href: '/partner' },
+      { label: 'Contact Us', href: '/contact' },
     ],
     href: '/about',
   },
