@@ -4,10 +4,10 @@ import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps
 import { SectionHeading } from '@/components/section-heading'
 import { Reveal } from '@/components/motion/reveal'
 
-const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
+const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json'
 
 const MAP_WIDTH = 1000
-const MAP_HEIGHT = 520
+const MAP_HEIGHT = 620
 
 const HQ_COLOR = 'oklch(0.58 0.2 27)'
 const BRANCH_COLOR = 'oklch(0.5 0.16 258)'
@@ -25,32 +25,32 @@ const LOCATIONS: Location[] = [
     name: 'Singapore',
     role: 'Headquarters',
     coordinates: [103.8198, 1.3521],
-    tag: { x: -36, y: 24, side: 'left' },
+    tag: { x: 34, y: 56, side: 'right' },
   },
   {
     name: 'Malaysia',
     role: 'Regional Branch',
     coordinates: [101.6869, 3.139],
-    tag: { x: -32, y: -18, side: 'left' },
+    tag: { x: -44, y: 0, side: 'left' },
   },
   {
     name: 'Philippines',
     role: 'Regional Branch',
     coordinates: [120.9842, 14.5995],
-    tag: { x: 30, y: 0, side: 'right' },
+    tag: { x: 40, y: 0, side: 'right' },
   },
   {
     name: 'India',
     role: 'Regional Branch',
     coordinates: [80.2707, 13.0827],
-    tag: { x: -30, y: -22, side: 'left' },
+    tag: { x: 36, y: -36, side: 'right' },
   },
 ]
 
 // Soft concentric rings that mark each operating region
 const HALOS: { center: [number, number]; radii: number[] }[] = [
-  { center: [108, 6], radii: [34, 58, 86] },
-  { center: [79, 19], radii: [26, 44] },
+  { center: [110, 6], radii: [110, 190, 270] },
+  { center: [79, 20], radii: [80, 140] },
 ]
 
 const OPERATING_COUNTRIES = ['India', 'Malaysia', 'Singapore', 'Philippines']
@@ -63,8 +63,8 @@ const LEGEND = [
 function LocationTag({ location }: { location: Location }) {
   const { x, y, side } = location.tag
   const label = location.name.toUpperCase()
-  const width = label.length * 6.6 + 18
-  const height = 18
+  const width = label.length * 8.4 + 26
+  const height = 24
   const rectX = side === 'left' ? x - width : x
   const color = location.role === 'Headquarters' ? HQ_COLOR : BRANCH_COLOR
 
@@ -74,7 +74,7 @@ function LocationTag({ location }: { location: Location }) {
         points={`0,0 0,${y} ${x},${y}`}
         fill="none"
         stroke={color}
-        strokeWidth={0.9}
+        strokeWidth={1.5}
         strokeLinejoin="round"
       />
       <rect x={rectX} y={y - height / 2} width={width} height={height} fill={color} />
@@ -84,9 +84,9 @@ function LocationTag({ location }: { location: Location }) {
         textAnchor="middle"
         dominantBaseline="central"
         fill="white"
-        fontSize={10}
-        fontWeight={500}
-        letterSpacing={0.4}
+        fontSize={12.5}
+        fontWeight={600}
+        letterSpacing={0.6}
         className="font-heading"
       >
         {label}
@@ -111,7 +111,7 @@ export function GlobalPresenceSection() {
           width={MAP_WIDTH}
           height={MAP_HEIGHT}
           projection="geoMercator"
-          projectionConfig={{ center: [10, 23], scale: 160 }}
+          projectionConfig={{ center: [105, 17.5], scale: 640 }}
           className="block h-auto w-full"
         >
           {HALOS.map((halo) => (
@@ -134,7 +134,7 @@ export function GlobalPresenceSection() {
                       geography={geo}
                       fill={isOperating ? 'oklch(0.74 0.09 245)' : 'oklch(0.89 0.045 235 / 0.85)'}
                       stroke="oklch(1 0 0 / 0.7)"
-                      strokeWidth={0.4}
+                      strokeWidth={0.8}
                       className={
                         isOperating
                           ? 'outline-none transition-[fill] duration-300 hover:fill-[oklch(0.68_0.11_248)]'
@@ -148,7 +148,7 @@ export function GlobalPresenceSection() {
 
           {LOCATIONS.map((location, i) => {
             const color = location.role === 'Headquarters' ? HQ_COLOR : BRANCH_COLOR
-            const r = location.role === 'Headquarters' ? 5 : 4
+            const r = location.role === 'Headquarters' ? 8 : 6.5
             return (
               <Marker key={location.name} coordinates={location.coordinates}>
                 <title>{`${location.name} — ${location.role}`}</title>
@@ -157,7 +157,7 @@ export function GlobalPresenceSection() {
                   r={r}
                   fill="none"
                   stroke={color}
-                  strokeWidth={1.2}
+                  strokeWidth={2}
                   opacity={0.55}
                   className="motion-reduce:hidden"
                   style={{
@@ -167,7 +167,7 @@ export function GlobalPresenceSection() {
                     animationDelay: `${i * 0.3}s`,
                   }}
                 />
-                <circle r={r} fill={color} stroke="white" strokeWidth={1.5} />
+                <circle r={r} fill={color} stroke="white" strokeWidth={2.5} />
               </Marker>
             )
           })}
