@@ -9,7 +9,7 @@ export const industries = [
     title: 'Rail & Mass Transit',
     description:
       'MRT, metro, railway, station, tunnel and depot communications, fibre, electrical, ICT and security infrastructure.',
-    image: '/images/domain-terminal.png',
+    image: '/images/project-rail.png',
   },
   {
     title: 'Telecommunications',
@@ -21,7 +21,7 @@ export const industries = [
     title: 'Marine & Shipyard',
     description:
       'Shipbuilding, vessel infrastructure, retrofit, modification, fibre, telecommunications, ICT, electrical and security.',
-    image: '/images/domain-project.png',
+    image: '/images/project-marine.png',
   },
   {
     title: 'Data Centres',
@@ -39,6 +39,6 @@ export const industries = [
     title: 'Infrastructure & Transportation',
     description:
       'Multidisciplinary engineering and technology infrastructure supporting major transportation and public infrastructure environments.',
-    image: '/images/domain-security.png',
+    image: '/images/hero-infrastructure.png',
   },
 ]
