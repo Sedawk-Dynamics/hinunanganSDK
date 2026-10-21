@@ -10,11 +10,11 @@ export function SiteFooter() {
         <div className="grid gap-12 lg:grid-cols-[1.3fr_2fr]">
           <Reveal direction="left" className="flex flex-col items-start gap-6">
             <Image
-              src="/images/logo.png"
+              src="/Log.png"
               alt="Dynamic Communication logo"
-              width={340}
-              height={208}
-              className="h-18 w-auto md:h-24"
+              width={4077}
+              height={736}
+              className="h-10 w-auto md:h-14"
             />
             <p className="font-heading text-xl font-medium leading-snug text-balance">
               Engineering Technology.

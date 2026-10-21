@@ -1,5 +1,6 @@
 import { Award, HeartHandshake, ShieldCheck, Lightbulb, Gauge, Leaf } from 'lucide-react'
 import { Reveal } from '@/components/motion/reveal'
+import { FitLine } from '@/components/fit-line'
 
 const values = [
   {
@@ -44,9 +45,13 @@ export function VisionMissionValues() {
               <span className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
                 Our Vision
               </span>
-              <h3 className="font-heading text-2xl font-semibold leading-tight text-balance md:text-3xl">
+              <FitLine
+                as="h3"
+                minSize={20}
+                className="font-heading text-2xl font-semibold leading-tight text-balance md:text-3xl"
+              >
                 Building the infrastructure of tomorrow.
-              </h3>
+              </FitLine>
               <p className="text-pretty leading-relaxed text-muted-foreground">
                 To become a trusted engineering and technology infrastructure partner delivering
                 connected, intelligent, resilient and sustainable solutions across critical
@@ -59,9 +64,13 @@ export function VisionMissionValues() {
               <span className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
                 Our Mission
               </span>
-              <h3 className="font-heading text-2xl font-semibold leading-tight text-balance md:text-3xl">
+              <FitLine
+                as="h3"
+                minSize={20}
+                className="font-heading text-2xl font-semibold leading-tight text-balance md:text-3xl"
+              >
                 Connect. Engineer. Enable.
-              </h3>
+              </FitLine>
               <p className="text-pretty leading-relaxed text-muted-foreground">
                 To deliver quality-driven, reliable and cost-effective infrastructure and
                 technology solutions that connect people, enable operations and strengthen

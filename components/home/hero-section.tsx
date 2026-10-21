@@ -41,7 +41,7 @@ export function HeroSection() {
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-surface pt-16 md:pt-[4.5rem]"
+      className="relative w-full overflow-hidden bg-surface"
       aria-roledescription="carousel"
       aria-label="Dynamic Communication banners"
     >
@@ -75,7 +75,7 @@ export function HeroSection() {
         type="button"
         onClick={prev}
         aria-label="Previous slide"
-        className="absolute left-3 top-[calc(50%+2rem)] z-10 inline-flex size-9 -translate-y-1/2 items-center justify-center rounded-full bg-surface/80 text-surface-foreground shadow-sm backdrop-blur transition hover:bg-surface md:left-5 md:size-11"
+        className="absolute left-3 top-1/2 z-10 inline-flex size-9 -translate-y-1/2 items-center justify-center rounded-full bg-surface/80 text-surface-foreground shadow-sm backdrop-blur transition hover:bg-surface md:left-5 md:size-11"
       >
         <ChevronLeft className="size-5" />
       </button>
@@ -83,7 +83,7 @@ export function HeroSection() {
         type="button"
         onClick={next}
         aria-label="Next slide"
-        className="absolute right-3 top-[calc(50%+2rem)] z-10 inline-flex size-9 -translate-y-1/2 items-center justify-center rounded-full bg-surface/80 text-surface-foreground shadow-sm backdrop-blur transition hover:bg-surface md:right-5 md:size-11"
+        className="absolute right-3 top-1/2 z-10 inline-flex size-9 -translate-y-1/2 items-center justify-center rounded-full bg-surface/80 text-surface-foreground shadow-sm backdrop-blur transition hover:bg-surface md:right-5 md:size-11"
       >
         <ChevronRight className="size-5" />
       </button>

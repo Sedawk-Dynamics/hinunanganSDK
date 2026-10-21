@@ -1,4 +1,5 @@
 import { Reveal } from '@/components/motion/reveal'
+import { FitLine } from '@/components/fit-line'
 import { cn } from '@/lib/utils'
 
 export function SectionHeading({
@@ -17,7 +18,7 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        'flex max-w-2xl flex-col gap-4',
+        'flex flex-col gap-4',
         align === 'center' && 'mx-auto items-center text-center',
         className,
       )}
@@ -29,14 +30,29 @@ export function SectionHeading({
           </span>
         </Reveal>
       )}
-      <Reveal delay={0.05}>
-        <h2 className="font-heading text-balance text-3xl font-semibold leading-tight tracking-tight md:text-4xl">
+      <Reveal delay={0.05} className="w-full">
+        <FitLine
+          as="h2"
+          minSize={22}
+          className={cn(
+            'font-heading max-w-3xl text-balance text-3xl font-semibold leading-tight tracking-tight md:text-4xl',
+            align === 'center' && 'mx-auto',
+          )}
+        >
           {title}
-        </h2>
+        </FitLine>
       </Reveal>
       {description && (
-        <Reveal delay={0.1}>
-          <p className="text-pretty leading-relaxed text-muted-foreground">{description}</p>
+        <Reveal delay={0.1} className="w-full">
+          <FitLine
+            minSize={14}
+            className={cn(
+              'max-w-2xl text-pretty leading-relaxed text-muted-foreground',
+              align === 'center' && 'mx-auto',
+            )}
+          >
+            {description}
+          </FitLine>
         </Reveal>
       )}
     </div>
