@@ -17,12 +17,12 @@ export default function CapabilitiesPage() {
       <PageHero
         eyebrow="Capabilities"
         title="Specialist capabilities, delivered end to end"
-        description="Our multidisciplinary teams carry projects from design and permitting through installation, testing, and long-term maintenance."
+        description="Multidisciplinary teams carrying projects from design and permitting through to maintenance."
         image="/images/about-hero.jpg"
         imageAlt="Multidisciplinary engineering team reviewing blueprints on site at dusk"
       />
 
-      <section className="mx-auto max-w-7xl px-6 py-20 md:py-28 lg:px-8">
+      <section className="mx-auto max-w-7xl px-6 py-10 md:py-14 lg:px-8">
         <SectionHeading
           eyebrow="Core disciplines"
           title="Seven engineering capabilities under one roof"

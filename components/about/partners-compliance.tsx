@@ -28,7 +28,7 @@ const certifications = [
 
 export function PartnersCompliance() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-12 md:py-16">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="grid gap-16 lg:grid-cols-2">
           <div className="flex flex-col gap-8">

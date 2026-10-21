@@ -76,7 +76,7 @@ export function GlobalPresenceSection() {
   const [activeLocation, setActiveLocation] = useState<string | null>(null)
 
   return (
-    <section className="border-t border-border bg-secondary/40 py-20 md:py-28">
+    <section className="border-t border-border bg-secondary/40 py-10 md:py-14">
       <div className="mx-auto max-w-7xl px-6 md:px-8">
         <SectionHeading
           eyebrow="Our Presence"

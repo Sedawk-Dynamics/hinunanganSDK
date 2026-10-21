@@ -12,7 +12,7 @@ const markets = [
 
 export function GlobalFootprint() {
   return (
-    <section className="border-y border-border bg-card/40 py-24 md:py-32">
+    <section className="border-y border-border bg-card/40 py-12 md:py-16">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
           <div className="flex flex-col gap-8">

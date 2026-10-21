@@ -18,13 +18,13 @@ export default function ProjectsPage() {
     <>
       <PageHero
         eyebrow="Projects"
-        title="Infrastructure delivered under pressure, on schedule"
-        description="A selection of the critical infrastructure projects our teams have designed, built, and commissioned across the region."
+  title="Critical infrastructure, delivered on schedule"
+  description="Projects our teams have designed, built, and commissioned across the region."
         image="/images/projects-hero.jpg"
         imageAlt="Airport runway with airfield guidance signage lit at blue hour"
       />
 
-      <section className="mx-auto max-w-7xl px-6 py-20 md:py-28 lg:px-8">
+      <section className="mx-auto max-w-7xl px-6 py-10 md:py-14 lg:px-8">
         <SectionHeading eyebrow="Selected work" title="Projects across seven sectors" />
 
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
