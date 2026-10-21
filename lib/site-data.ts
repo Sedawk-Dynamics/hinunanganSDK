@@ -62,3 +62,11 @@ export const footerColumns = [
     href: '/about',
   },
 ]
+
+// TODO: replace with the company's real profile URLs
+export const socialLinks = [
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/', icon: 'linkedin' },
+  { label: 'Facebook', href: 'https://www.facebook.com/', icon: 'facebook' },
+  { label: 'Instagram', href: 'https://www.instagram.com/', icon: 'instagram' },
+  { label: 'YouTube', href: 'https://www.youtube.com/', icon: 'youtube' },
+] as const

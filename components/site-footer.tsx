@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { footerColumns } from '@/lib/site-data'
+import { footerColumns, socialLinks } from '@/lib/site-data'
+import { SocialIcon } from '@/components/social-icon'
 import { Reveal, RevealGroup, RevealItem } from '@/components/motion/reveal'
 
 export function SiteFooter() {
@@ -14,7 +15,7 @@ export function SiteFooter() {
               alt="Dynamic Communication logo"
               width={4077}
               height={736}
-              className="h-10 w-auto md:h-14"
+              className="-ml-[3px] h-10 w-auto md:-ml-[5px] md:h-14"
             />
             <p className="font-heading text-xl font-medium leading-snug text-balance">
               Engineering Technology.
@@ -26,6 +27,21 @@ export function SiteFooter() {
             <p className="text-sm uppercase tracking-[0.16em] text-surface-muted">
               Connect. Engineer. Integrate. Deliver.
             </p>
+            <ul className="flex items-center gap-3">
+              {socialLinks.map((social) => (
+                <li key={social.label}>
+                  <a
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
+                    className="flex size-10 items-center justify-center rounded-full border border-surface-border text-surface-muted transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground"
+                  >
+                    <SocialIcon name={social.icon} className="size-4" />
+                  </a>
+                </li>
+              ))}
+            </ul>
           </Reveal>
 
           <RevealGroup className="grid grid-cols-2 gap-8 sm:grid-cols-4">

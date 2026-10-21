@@ -20,7 +20,7 @@ export function CtaSection({
   buttonLabel = 'Start a Project',
   buttonHref = '/contact',
   secondaryLabel = 'Partner With Us',
-  secondaryHref = '/capabilities',
+  secondaryHref = '/partner',
 }: CtaSectionProps) {
   return (
     <section className="relative overflow-hidden py-12 md:py-16">
